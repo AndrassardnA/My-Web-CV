@@ -1,11 +1,73 @@
 <!doctype html>
 <html lang="hu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jankovics András CV</title>
-  </head>
-  <body>
-    Jankovics András - Önéletrajz
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style/style.css">
+  <title>Jankovics András CV</title>
+</head>
+
+<body>
+  <header>
+    <div>Color mode switch</div>
+    <div>Language switch</div>
+  </header>
+  <main>
+    <div id="header-row">
+      <div id="img-cont"><img src="src/assets/CV-kep.jpg" alt="profil"></div>
+      <div id="main-data">
+        <div>Név:</div>
+        <div>Jankovics András</div>
+        <div>Született:</div>
+        <div>2003.12.14.</div>
+        <div>Lakcím:</div>
+        <div>HU 2300 Ráckeve Kenderek köz 10.</div>
+        <div>Tanulmányok:</div>
+        <div><a href="https:/u-szeged.hu" target="_blank">Szegedi Tudományegyetem</a>, <a
+            href="https://www.inf.u-szeged.hu/felvi/pti" target="_blank">Programtervező Informatikus Bsc.</a></div>
+      </div>
+    </div>
+    <div id="content-switch">
+      <button id="skillBtn">Képességek</button>
+      <button id="workBtn">Munkatapasztalat</button>
+      <button id="personalBtn">Szeméyles</button>
+    </div>
+    <div id="middle-row">
+    </div>
+  </main>
+  <div class="content-wrapper"></div>
+  <footer>
+    <div id='connections'>
+      <div>
+        <div>Email cím:</div>
+        <div>jankovics.andris@gmail.com</div>
+      </div>
+      <div>
+        <div>Telefonszám:</div>
+        <div>06 (70) 218 6298</div>
+      </div>
+    </div>
+    <div id='links'>
+      <div><a href="https://github.com/AndrassardnA" target="_blank">
+        <img src="src/assets/icons/github-svgrepo-com.svg" alt="github">
+        Github</a></div>
+      <div><a href="https://www.linkedin.com/in/andrás-jankovics-255581406/?skipRedirect=true"
+          target="_blank">
+          <img src="src/assets/icons/linkedin-svgrepo-com.svg" alt="github">
+          LinkedIn</a></div>
+      <div><a href="src/assets/Jankovics_Andras_CV.pdf" target="_blank">
+        <img src="src/assets/icons/paper-note-svgrepo-com.svg" alt="github">
+        Önéletrajzom</a></div>
+    </div>
+  </footer>
+  <script type="module" src="src/main.ts"></script>
+  <script type="module" src="src/script/constants.ts"></script>
+  <script type="modile" src="src/script/functions.ts"></script>
+</body>
+
 </html>

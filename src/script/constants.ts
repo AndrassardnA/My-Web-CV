@@ -12,7 +12,7 @@ export const skills = [
 ];
 export const workExperience = [
     {
-        title: 'Colors Computer kft',
+        title: 'Colors Computer kft.',
         className: 'workBox',
         contList:[
             'Számítógépek javítása és karbantartása hardver és szoftver szinten',
@@ -26,6 +26,6 @@ export const personal = [
     {
         title: 'Hobbik',
         className: 'listBox',
-        contList:['sport','olvasás','programozás','túrázás','társasjáték','zene'],
+        contList:['sport','olvasás','programozás','túrázás','társasjáték','zene','sakk'],
     }
 ]

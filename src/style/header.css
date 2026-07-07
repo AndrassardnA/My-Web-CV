@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(55, 55, 55);
+    color: whitesmoke;
+
+    padding: 5px 5px;
+}
+#name-cont{
+    flex:0 0 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 21px;
+}

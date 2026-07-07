@@ -1,0 +1,75 @@
+{
+    "main": {
+        "name": "András Jankovics",
+        "born": "2003.12.14",
+        "address": "HU 2300 Ráckeve Kenderes köz 10.",
+        "studies": {
+            "university": {
+                "name": "University of Szeged",
+                "link": "https://u-szeged.hu/"
+            },
+            "major": {
+                "name": "BSc. in Computer Science",
+                "link": "https://www.inf.u-szeged.hu/felvi/pti"
+            }
+        }
+    },
+    "skills": {
+        "university": [
+            "C",
+            "C++",
+            "Java",
+            "Springboot",
+            "Scala",
+            "HTML",
+            "CSS",
+            "PHP",
+            "SQL",
+            "PL/pgSQL",
+            "React",
+            "R",
+            "Git",
+            "Blender",
+            "Three.js",
+            "Assembly x86",
+            "Assembly ARM",
+            "AutoCAD"
+        ],
+        "independent": [
+            "Unity 2D",
+            "Javascript",
+            "Typescript",
+            "C#"
+        ]
+    },
+    "work_experience": [
+        {
+            "name": "Colors Computer kft.",
+            "role": "Intern",
+            "experience": [
+                "Computer repair and maintenance at the hardware and software levels",
+                "Monitoring operated devices using Zabbix",
+                "Soldering PCBs",
+                "Server and virtual machine management",
+                "Refactoring outdated webistes' frontend"
+            ]
+        }
+    ],
+    "personal": {
+        "hobbies": [
+            "sport",
+            "reading",
+            "programming",
+            "hiking",
+            "board games",
+            "music",
+            "chess"
+        ]
+    },
+    "contact": {
+        "phone": "+36 70 218 6298",
+        "email": "jankovics.andris@gmail.com",
+        "github": "https://github.com/AndrassardnA",
+        "linkedin": "https://www.linkedin.com/in/andr%C3%A1s-jankovics-255581406/"
+    }
+}

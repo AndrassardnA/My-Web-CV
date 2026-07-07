@@ -1,0 +1,75 @@
+{
+    "main": {
+        "name": "Jankovics András",
+        "born": "2003.12.14",
+        "address": "HU 2300 Ráckeve Kenderes köz 10.",
+        "studies": {
+            "university": {
+                "name": "Szegedi Tudományegyetem",
+                "link": "https://u-szeged.hu/"
+            },
+            "major": {
+                "name": "Programtervező informatika BSc.",
+                "link": "https://www.inf.u-szeged.hu/felvi/pti"
+            }
+        }
+    },
+    "skills": {
+        "university": [
+            "C",
+            "C++",
+            "Java",
+            "Springboot",
+            "Scala",
+            "HTML",
+            "CSS",
+            "PHP",
+            "SQL",
+            "PL/pgSQL",
+            "React",
+            "R",
+            "Git",
+            "Blender",
+            "Three.js",
+            "Assembly x86",
+            "Assembly ARM",
+            "AutoCAD"
+        ],
+        "independent": [
+            "Unity 2D",
+            "Javascript",
+            "Typescript",
+            "C#"
+        ]
+    },
+    "work_experience": [
+        {
+            "name": "Colors Computer kft.",
+            "role": "Gyakornok",
+            "experience": [
+                "Számítógépek javítása és karbantartása hardver és szoftver szinten",
+                "Üzemeltetett eszközök monitorozása zabbix segítségével",
+                "NYÁK lapok forrasztása",
+                "Szerver és virtuális gépek kezelése",
+                "Elvault weboldalak frontend felújítása"
+            ]
+        }
+    ],
+    "personal": {
+        "hobbies": [
+            "sport",
+            "olvasás",
+            "programozás",
+            "túrázás",
+            "társasjáték",
+            "zene",
+            "sakk"
+        ]
+    },
+    "contact": {
+        "phone": "+36 70 218 6298",
+        "email": "jankovics.andris@gmail.com",
+        "github": "https://github.com/AndrassardnA",
+        "linkedin": "https://www.linkedin.com/in/andr%C3%A1s-jankovics-255581406/"
+    }
+}

@@ -1,16 +1,24 @@
 import { drawName } from "./script/content-header";
 import "./script/color-switch"
-import dataHU from "./content/data-hu.json";
-import dataEN from "./content/data-en.json"
+import mainHU from "./data/data-hu.json";
+import mainEN from "./data/data-en.json"
+import navHU from "./data/nav-hu.json"
+import navEN from "./data/nav-en.json"
 import { initRouter } from "./script/router";
+import { initNavButtons, toggleNavButtons, type NavigationData } from "./script/content-menu";
 
 let language="hu";
-let data;
+let mainData;
+let navData:NavigationData;
 if(language=="hu"){
-    data=dataHU;
+    mainData=mainHU;
+    navData=navHU;
 }
 else{
-    data=dataEN;
+    mainData=mainEN;
+    navData=navEN;
 }
-drawName("name-cont",data.main.name);
-initRouter(data);
+drawName("name-cont",mainData.main.name);
+initNavButtons(navData);
+toggleNavButtons();
+initRouter(mainData);

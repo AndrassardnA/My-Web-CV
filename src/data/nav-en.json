@@ -1,0 +1,24 @@
+{
+    "nav-buttons":[
+        {
+            "title":"Home",
+            "link":"home"
+        },
+        {
+            "title":"Skills",
+            "link":"skills"
+        },
+        {
+            "title":"Work Experience",
+            "link":"experience"
+        },
+        {
+            "title":"Personal",
+            "link":"personal"
+        },
+        {
+            "title":"Contact",
+            "link":"contact"
+        }
+    ]
+}

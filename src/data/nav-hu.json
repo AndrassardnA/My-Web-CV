@@ -1,0 +1,24 @@
+{
+    "nav-buttons":[
+        {
+            "title":"Nyitó",
+            "link":"home"
+        },
+        {
+            "title":"Ismeretek",
+            "link":"skills"
+        },
+        {
+            "title":"Munka tapasztalat",
+            "link":"experience"
+        },
+        {
+            "title":"Személyes",
+            "link":"personal"
+        },
+        {
+            "title":"Kapcsolat",
+            "link":"contact"
+        }
+    ]
+}

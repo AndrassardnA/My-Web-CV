@@ -1,4 +1,4 @@
-import { drawName } from "./script/content-header";
+import { drawName, toggleLanguageButtons } from "./script/content-header";
 import "./script/color-switch"
 import mainHU from "./data/data-hu.json";
 import mainEN from "./data/data-en.json"
@@ -7,18 +7,31 @@ import navEN from "./data/nav-en.json"
 import { initRouter } from "./script/router";
 import { initNavButtons, toggleNavButtons, type NavigationData } from "./script/content-menu";
 
-let language="hu";
-let mainData;
-let navData:NavigationData;
-if(language=="hu"){
-    mainData=mainHU;
-    navData=navHU;
+const initApp = () => {
+    let language: string = document.documentElement.lang;
+    let mainData;
+    let navData: NavigationData;
+    if (language == "hu") {
+        mainData = mainHU;
+        navData = navHU;
+    }
+    else {
+        mainData = mainEN;
+        navData = navEN;
+    }
+
+    drawName("name-cont", mainData.main.name);
+    initNavButtons(navData);
+    toggleNavButtons();
+    initRouter(mainData);
+    toggleLanguageButtons(language);
+
 }
-else{
-    mainData=mainEN;
-    navData=navEN;
-}
-drawName("name-cont",mainData.main.name);
-initNavButtons(navData);
-toggleNavButtons();
-initRouter(mainData);
+document.addEventListener('click', (event: MouseEvent) => {
+    const target = event.target as HTMLButtonElement;
+    if (target && (target.id == "hu" || target.id == "en")) {
+        document.documentElement.lang = target.id;
+        initApp();
+    }
+});
+initApp();

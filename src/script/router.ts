@@ -16,7 +16,7 @@ export const initRouter = (data:any): void => {
         if (path === '' || path === '/index.html' || path === '/') {
             path = 'home';
         }
-        const pageId = routes[path] || 'home';
+        const pageId = routes[path] || 'main';
 
         handleMainContent(pageId,data);   
     };

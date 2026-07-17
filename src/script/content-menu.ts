@@ -9,6 +9,7 @@ export interface NavigationData {
 export const initNavButtons = (data: NavigationData) => {
     const container = document.getElementById("menu-bar") as HTMLElement | null;
     if (container) {
+        container.innerHTML='';
         for (let i = 0; i < data['nav-buttons'].length; i++) {
             const button = document.createElement('button');
             button.setAttribute('nav-link', '');
@@ -30,9 +31,13 @@ export const toggleNavButtons = () => {
             target.disabled = true;
         }
     });
+    let winPath = window.location.pathname;
     menuButtons.forEach(element => {
-        const url = element.getAttribute('nav-path');
-        if (url && window.location.pathname.endsWith(url)) {
+        let elemUrl = element.getAttribute('nav-path');
+        if(winPath=='/My-Web-CV/'){
+            winPath+='home';
+        }
+        if (elemUrl && winPath.endsWith(elemUrl)) {
             element.disabled = true;
         }
     });

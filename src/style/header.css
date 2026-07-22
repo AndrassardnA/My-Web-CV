@@ -4,10 +4,11 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--color5);
-    color: var(--color1);
+    background-color: var(--bg_color_p);
+    color: var(--text_b);
 
     padding: 5px 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 #name-cont {
@@ -85,11 +86,16 @@ header {
 .language-buttons button:active img {
     width: 35px;
     height: 35px;
-    border: 2px solid var(--color1);
+    border: 2px solid var(--bg_color_t);
 }
 
 .language-buttons button:disabled img {
     width: 35px;
     height: 35px;
-    border: 2px solid var(--color1);
+    border: 2px solid var(--bg_color_t);
+}
+[data-theme="dark"] .language-buttons button:disabled img {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--bg_color_q);
 }

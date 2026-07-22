@@ -1,6 +1,8 @@
 main {
     flex: 1;
 
-    background-color: var(--color1);
-    color: var(--color6);
+    background-color: var(--bg_color_t);
+    color: var(--text_a);
+
+    transition: all 0.3s ease-in-out;
 }

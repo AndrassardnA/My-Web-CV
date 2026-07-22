@@ -1,17 +1,19 @@
-:root {
-    --color1: #ddd;
-    --color2: #999;
-    --color3: #777;
-    --color4: #555;
-    --color5: #333;
-    --color6: #000;
+:root{
+    --text_a:#000;
+    --text_b:#ddd;
+    --bg_color_p:#333;
+    --bg_color_q:#555;
+    --bg_color_r:#777;
+    --bg_color_s:#999;
+    --bg_color_t:#ddd;
 }
 
 [data-theme="dark"] {
-    --color1: #000;
-    --color2: #333;
-    --color3: #555;
-    --color4: #777;
-    --color5: #999;
-    --color6: #ddd;
+    --text_a:#ddd;
+    --text_b:#ddd;
+    --bg_color_p:#000;
+    --bg_color_q:#ccc;
+    --bg_color_r:#999;
+    --bg_color_s:#222;
+    --bg_color_t:#555;
 }

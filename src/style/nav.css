@@ -4,7 +4,8 @@ nav {
     flex-direction: column;
     align-items: center;
 
-    background-color: var(--color2);
+    background-color: var(--bg_color_s);
+    transition: all 0.3s ease-in-out;
 }
 
 .profile-cont {
@@ -40,23 +41,25 @@ nav {
 
     border: 0;
     border-radius: 100px;
-    background-color: var(--color1);
+    background-color: var(--bg_color_t);
 
     font-size: 18px;
 
-    transition: 0.1s all ease-in-out;
+    transition: 0.3s all ease-in-out;
 
     &:hover {
-        background-color: var(--color3);
+        background-color: var(--bg_color_r);
+        transition: 0.1s all ease-in-out;
     }
 
     &:active {
-        background-color: var(--color4);
+        background-color: var(--bg_color_q);
+        transition: 0.1s all ease-in-out;
     }
 
     &:disabled {
-        background-color: var(--color5);
-        color: var(--color1);
+        background-color: var(--bg_color_p);
+        color: var(--text_b);
     }
 
     -webkit-user-select: none;

@@ -1,4 +1,4 @@
-class ColorSwitch extends HTMLElement {
+export class ColorSwitch extends HTMLElement {
     private shadow: ShadowRoot;
     constructor() {
         super();
@@ -35,6 +35,12 @@ class ColorSwitch extends HTMLElement {
     get isChecked(): boolean{
         const checkbox = this.shadow.getElementById('checkbox') as HTMLInputElement | null;
         return checkbox?.checked?? false;
+    }
+    set setChecked(value:boolean){
+        const checkbox =this.shadow.getElementById('checkbox') as HTMLInputElement | null;
+        if(checkbox){
+            checkbox.checked=value;
+        }
     }
 }
 customElements.define('color-switch',ColorSwitch);

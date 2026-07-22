@@ -1,7 +1,17 @@
-:root{
-    --bg-color:#dfe;
-    --light2:#afc;
-    --light1:#8fa;
-    --dark1:#3a5;
-    --dark2:#072;
+:root {
+    --color1: #ddd;
+    --color2: #999;
+    --color3: #777;
+    --color4: #555;
+    --color5: #333;
+    --color6: #000;
+}
+
+[data-theme="dark"] {
+    --color1: #000;
+    --color2: #333;
+    --color3: #555;
+    --color4: #777;
+    --color5: #999;
+    --color6: #ddd;
 }

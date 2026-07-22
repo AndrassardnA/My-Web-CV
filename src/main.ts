@@ -6,6 +6,9 @@ import navHU from "./data/nav-hu.json"
 import navEN from "./data/nav-en.json"
 import { initRouter } from "./script/router";
 import { initNavButtons, toggleNavButtons, type NavigationData } from "./script/content-menu";
+import { initTheme, setTheme } from "./script/theme";
+import {ColorSwitch} from "./script/color-switch"
+
 
 const initApp = () => {
     let language: string = document.documentElement.lang;
@@ -25,7 +28,6 @@ const initApp = () => {
     toggleNavButtons();
     initRouter(mainData);
     toggleLanguageButtons(language);
-
 }
 document.addEventListener('click', (event: MouseEvent) => {
     const target = event.target as HTMLButtonElement;
@@ -34,4 +36,16 @@ document.addEventListener('click', (event: MouseEvent) => {
         initApp();
     }
 });
+document.addEventListener('click', (event: MouseEvent) => {
+    const target = event.target as ColorSwitch;
+    if (target && (target.id == "color-switch")) {
+        if(target.isChecked){
+            setTheme('dark');
+        }
+        else{
+            setTheme('light');
+        }
+    }
+});
 initApp();
+initTheme();

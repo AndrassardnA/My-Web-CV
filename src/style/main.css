@@ -1,5 +1,6 @@
-main{
-    flex:1;
-    
-    background-color: #ccc;
+main {
+    flex: 1;
+
+    background-color: var(--color1);
+    color: var(--color6);
 }
